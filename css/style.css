@@ -1,1 +1,54 @@
 
+
+
+* {
+  padding: 0px;
+  margin: 0px auto;
+}
+
+html, body, .container-full, header {
+  display: block;
+}
+
+html {
+  min-height: 100%;
+  overflow-y:  none;
+}
+
+body {
+  height: 100%;
+  min-height: 756px;
+  min-width: 100%;
+  position: initial;
+  font-size: 16px;
+  font-family: Terminal;
+  background-color: #000;
+  color: #FFF;
+}
+
+.container-full {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+  width: 100%;
+  min-width: 1024px;
+  position: relative;
+}
+
+}
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
